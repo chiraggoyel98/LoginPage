@@ -20,8 +20,8 @@ This project uses the following technologies:
 npm install && npm run client-install
 
 // Run client & server with concurrently
-npm run dev
+npm start
 
-// Server runs on http://localhost:5000 and client on http://localhost:3000
+// Server runs on http://localhost:9002 and client on http://localhost:3000
 
 ```
