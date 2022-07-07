@@ -21,15 +21,17 @@ const Login = ({ setLoginUser}) => {
     }
 
     const login = () => {
-        axios.post("http://localhost:9002/login", user)
-        
-        .then(res => {
-            alert(res.data.message)
-
-            setLoginUser(res.data.user)
-
-            navigate("/")
-        })
+        const { email, password } = user
+        if(email && password ) {
+            axios.post("http://localhost:9002/login", user)        
+            .then(res => {
+                alert(res.data.message)
+                setLoginUser(res.data.user)
+                navigate("/")
+            })
+        }else {
+            alert("Enter valid details")
+        }
     }
 
     return (
@@ -37,7 +39,7 @@ const Login = ({ setLoginUser}) => {
             <h1>Login</h1>
             <div className="msg"></div>
 
-            <input type="text" placeholder="Email id" name="email" value={user.email} onChange={updateChange}></input>
+            <input autocomplete="off" type="text" placeholder="Email id" name="email" value={user.email} onChange={updateChange}></input>
             <input type="password" placeholder="Password" name="password" value={user.password} onChange={updateChange}></input>
             
             <div className="button" onClick={login}>Login</div>

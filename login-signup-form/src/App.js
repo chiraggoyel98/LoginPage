@@ -12,12 +12,13 @@ function App() {
 
   return (
     <div className="App"  >
+    {/* {console.log(user)} */}
       <Router> 
         <Routes>
           <Route exact path="/" element =
             {
-              (user && user.name) ? <Home setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser}/>
-            }
+              (user && user._id)?<Home setLoginUser={setLoginUser} /> :  <Login setLoginUser={setLoginUser}/>
+            }       
           />
           <Route path="/login"  element = { <Login /> } />
 
