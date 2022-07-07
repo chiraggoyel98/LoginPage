@@ -43,8 +43,8 @@ const Signup = () => {
         <h1>Sign Up</h1>
         <div className="msg"></div>
 
-        <input autocomplete="off" type="text" name="name" value={user.name} placeholder="Enter your Name" onChange={updateChange}></input>
-        <input autocomplete="off" type="text" name="email" value={user.email} placeholder="Enter your Email id" onChange={updateChange}></input>
+        <input autoComplete="off" type="text" name="name" value={user.name} placeholder="Enter your Name" onChange={updateChange}></input>
+        <input autoComplete="off" type="text" name="email" value={user.email} placeholder="Enter your Email id" onChange={updateChange}></input>
         <input  type="password" name="password" value={user.password} placeholder="Enter Password" onChange={updateChange}></input>
         
         <div className="button" onClick={register}>Sign UP</div>

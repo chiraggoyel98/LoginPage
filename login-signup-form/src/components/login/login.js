@@ -39,7 +39,7 @@ const Login = ({ setLoginUser}) => {
             <h1>Login</h1>
             <div className="msg"></div>
 
-            <input autocomplete="off" type="text" placeholder="Email id" name="email" value={user.email} onChange={updateChange}></input>
+            <input autoComplete="off" type="text" placeholder="Email id" name="email" value={user.email} onChange={updateChange}></input>
             <input type="password" placeholder="Password" name="password" value={user.password} onChange={updateChange}></input>
             
             <div className="button" onClick={login}>Login</div>

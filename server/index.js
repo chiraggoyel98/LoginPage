@@ -8,7 +8,7 @@ app.use(express.urlencoded())
 app.use(cors())
 
 mongoose.connect("mongodb://localhost:27017/myLoginSignUpDB", {
-    useNewUrlParser: true,
+    useNewUrlParser: true,  
     useUnifiedTopology: true
 }, () => {
     console.log("DB connected")
