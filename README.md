@@ -20,11 +20,7 @@ This project uses the following technologies:
 npm install 
 
 // Run client & server with concurrently
-<<<<<<< HEAD
-npm start
-=======
 npm start && node index.js
->>>>>>> 299e4fe436b952f1cbc8058c4c7f0ecbd5fec514
 
 // Server runs on http://localhost:9002 and client on http://localhost:3000
 
