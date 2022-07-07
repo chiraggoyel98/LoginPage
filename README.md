@@ -17,10 +17,10 @@ This project uses the following technologies:
 
 ```
 // Install dependencies for server & client
-npm install && npm run client-install
+npm install 
 
 // Run client & server with concurrently
-npm run dev
+npm start && node index.js
 
 // Server runs on http://localhost:9002 and client on http://localhost:3000
 
