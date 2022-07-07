@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App"  >
-    {/* {console.log(user)}
+    {console.log(user)}
       <Router> 
         <Routes>
           <Route exact path="/" element =
@@ -25,8 +25,8 @@ function App() {
           <Route path="/register"  element = { <Signup /> } />
          
         </Routes>
-      </Router> */}
-      < Home />
+      </Router>
+    
     </div>
 
   );
