@@ -15,6 +15,7 @@ const Signup = () => {
 
     const updateChange = e => {
         const {name,value} = e.target
+
         setUser({
             ...user,
             [name] : value
@@ -23,12 +24,14 @@ const Signup = () => {
 
     const register = () => {
         const { name, email, password } = user
+
         if( name && email && password ){
            axios.post("http://localhost:9002/signup", user)
             .then( res => {
                 alert(res.data.message)
                 navigate("/login")
             })
+            
         } else {
             alert("invalid input")
         }

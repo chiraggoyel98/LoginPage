@@ -11,8 +11,8 @@ function App() {
   const [ user, setLoginUser] = useState({})
 
   return (
-    <div className="App" >
-      <Router>
+    <div className="App"  >
+      <Router> 
         <Routes>
           <Route exact path="/" element =
             {
